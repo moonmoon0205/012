@@ -1,0 +1,33 @@
+{
+  "name": "asset-navigator",
+  "version": "1.0.0",
+  "description": "资产领航 - 电脑记账软件",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.zichan.linghang",
+    "productName": "资产领航",
+    "copyright": "Copyright © 2025",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "icon": "assets/icon.ico",
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^29.3.0",
+    "electron-builder": "^24.14.1"
+  }
+}
